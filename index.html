@@ -1,61 +1,71 @@
 <!DOCTYPE html>
-
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet" />
-
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
   <title>Мой сайт</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet" />
   <style>
-    body { font-family: Comfortaa, cursive; background: #f0f0f0; text-align: center; padding: 30px; }
-    img { max-width: 800px; border-radius: 15px; margin-bottom: 25px; }
-    h1 { color: #333; }
-    p { color: #555; max-width: 1000px; margin: 0 auto; }
-
-     body {
-    font-family: 'Comfortaa', cursive;
-    background: url('back.jpeg') no-repeat center center fixed;
-    background-size: cover;
-    color: #fff;
-    text-align: center;
-    padding: 40px;
-   display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-   max-width: 900px;
-   margin: 30px auto;
-  }.gallery img {
-   width: 150px;
-   height: 100px;
-   object-fit: cover;
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-   cursor: pointer;
-  }.gallery img:hover {
-    transform: scale(1.2);
-    box-shadow: 0 8px 20px rgba(102, 136, 204, 0.7);
-    z-index: 10;
-}
-
-
+    body {
+      font-family: 'Comfortaa', cursive;
+      background: url('back.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+      padding: 40px;
+      margin: 0;
+    }
+    h1 {
+      color: #fff;
+      margin-bottom: 30px;
+    }
+    p {
+      color: #ddd;
+      max-width: 900px;
+      margin: 20px auto;
+      font-size: 18px;
+    }
+    a {
+      color: #1e00cb;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }.gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      max-width: 900px;
+      margin: 30px auto;
+    }.gallery img {
+      width: 150px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }.gallery img:hover {
+      transform: scale(1.2);
+      box-shadow: 0 8px 20px rgba(102, 136, 204, 0.7);
+      z-index: 10;
+    }
   </style>
-
 </head>
-
-
 <body>
   <h1>Привет! Это мой сайт</h1>
+
   <div class="gallery">
-  <img src="photo.jpeg" alt="Стрит фото ночью." />
-  <img src="photo2.jpg" alt="Стрит фото, осень, Лада." />
-  <img src="photo3.jpg" alt="Фото 3" />
-  <!-- Добавь остальные фото сюда -->
-</div>
+    <img src="photo.png" alt="Стрит фото ночью." />
+    <img src="photo2.jpg" alt="Стрит фото, осень, Лада." />
+    <img src="photo3.jpg" alt="Фото с высоты, дождь." />
+    <!-- Добавь остальные фото сюда -->
+  </div>
+
   <p>Я фотограф-любитель из ДНР, часто фотографирую на улице, людей редко фотографирую. Пользуюсь Canon 5D Mark 3, 50mm f 1.8: 1 обьектив.</p>
 
-<!-- Блок с ссылкой на Telegram -->
-<p style="margin-top: 30px; font-size: 18px;">
-  Подписывайтесь на мой канал в Telegram: 
-  <a href="https://t.me/view347" target="_blank" style="color: #1e00cb; text-decoration: none;">https://t.me/view347</a>
-</p>
+  <p style="margin-top: 30px; font-size: 18px;">
+    Подписывайтесь на мой канал в Telegram: 
+    <a href="https://t.me/view347" style="color: #1e00cb;" target="_blank">https://t.me/view347</a>
+  </p>
+</body>
+</html>
